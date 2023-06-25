@@ -21,3 +21,5 @@ npm install
 # Correr el proyecto
 npm run dev
 ````
+
+Dentro del proyecto hay una carpeta con nombre postman, en ella encontraran una colleción para poder consumir las apis asi como los enviroments necesarios.
