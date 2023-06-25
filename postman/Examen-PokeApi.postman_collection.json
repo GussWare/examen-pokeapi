@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "1ebef827-aa4a-4e62-912d-64e9743fbf2b",
+		"name": "Examen-PokeApi",
+		"description": "Apis para el proyecto Boilerplate MEAN. Tiene todas las apis necesarias para arrancuar cualquier tipo de proyecto basado en REST APIS.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1994816"
+	},
+	"item": [
+		{
+			"name": "PokeApi",
+			"item": [
+				{
+					"name": "Listado de Pokemons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/pokemon/find?limit=100&page=1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pokemon",
+								"find"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "search",
+									"value": "beedrill",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pokemon By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/pokemon/find/:name",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pokemon",
+								"find",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pokemon By Name Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "alakazam",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/pokemon/make-pdf/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pokemon",
+								"make-pdf",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
